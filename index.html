@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My website</title>
+    <title>Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500&family=Francois+One&family=Roboto:wght@100&family=Source+Code+Pro&display=swap" rel="stylesheet">
     
     <style>
@@ -14,9 +14,9 @@
             text-decoration: none;
         }
         body{
-            background-color: black;
-            /* background-image: url('bg.jpg'); */
-            /* background-size: cover; */
+            /* background-color: black; */
+            background-image: url('bg.jpg');
+            background-size: cover;
             /* position: absolute; */
 
         }
@@ -69,64 +69,31 @@
             line-height: 1em;
             font-family: 'Source Code Pro', monospace;
         }
-        #s1::after{
-            content: "";
-            position: absolute;
-            left: 523px;
-            height: 33px;
-            width: 400px;
-            /* border-left: 2px solid white; */
-            background-color:black ;
-            animation: typing 3s steps(18);
-            animation-iteration-count: 1;
-            -webkit-animation-fill-mode: forwards;
-        }
         @keyframes typing{
             100%{
                 left: 900px;
                 margin: 0 -35px 0 -35px;
             }
         }
-        #s1{
-            color: white;
-        }
-        #s2{
-            color: red;
-        }
-        #s3{
-            color: white;
-        }
-        #s3::after{
-            content: "";
-            position: absolute;
-            left: 485px;
-            height: 33px;
-            width: 500px;
-            /* border-left: 2px solid white; */
-            background-color:black ;
-            animation: typing 3s steps(21);
-            animation-delay: 3s;
-            animation-iteration-count: 1;
-            -webkit-animation-fill-mode: forwards;
-        }
         .cursor{
             content: "";
             position: absolute;
-            left: 865px;
+            left: 910px;
             height: 30px;
             width: 5px;
+            background-color: white;
             /* border-left: 2px solid black; */
-            background-color:black;
+            opacity: 0%;
             /* animation-delay: 9s; */
             animation: blink 2s steps(1) infinite;
             animation-delay: 5s;
         }
         @keyframes blink{
             50%{
-                background-color: black;
+                opacity: 0%;
             }
             50%{
-                background-color: white;
+                opacity: 100%;
             }
         }
         .aboutme{
@@ -144,21 +111,387 @@
             font-size: 20px;
             color: black;
         }
+        @keyframes pop {
+            100%{
+                opacity: 100%;
+            }
+        }
+        #s1{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 1s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s2{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 1.1s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s3{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 1.2s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s4{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 1.3s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s5{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 1.4s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s6{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 1.5s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s7{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 1.6s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s8{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 1.7s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s9{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 1.8s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s10{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 1.9s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s11{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 2s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s12{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 2.1s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s13{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 2.2s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s14{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 2.3s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s15{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 2.4s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s16{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 2.5s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s17{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 2.6s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s18{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 2.7s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s19{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 2.8s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s20{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 3s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s21{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 3.1s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s22{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 3.2s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s23{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 3.3s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s24{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 3.4s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s25{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 3.5s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s26{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 3.6s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s27{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 3.7s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s28{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 3.8s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s29{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 3.9s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s30{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 4s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s31{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 4.1s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s32{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 4.2s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s33{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 4.3s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s34{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 4.4s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s35{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 4.5s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s36{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 4.6s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s37{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 4.7s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s38{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 4.8s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s39{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 4.9s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        #s40{
+            color: white;
+            opacity: 0%;
+            animation: pop 0.1s;
+            animation-iteration-count: 1;
+            animation-delay: 5s;
+            -webkit-animation-fill-mode: forwards;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar">
         <!-- <h2>MENU</h2> -->
         <li class="item"><a href="index.html" class="nav-item">Home</a></li>
-        <li class="item"><a href="" class="nav-item">About Me</a></li>
+        <li class="item"><a href="aboutme.html" class="nav-item">About Me</a></li>
         <li class="item"><a href="" class="nav-item">Achievements</a></li>
-        <li class="item"><a href="" class="nav-item">Contact Me</a></li>
+        <li class="item"><a href="contactme.html" class="nav-item">Contact Me</a></li>
     </nav>
     <div class="main">
         <img src="profilepic 2.png" alt="" height="370px" width="370px">
-        <div class="intro"><span id="s1" class="introspan">Hi I am </span><span id="s2" class="introspan">Sakib Alam</span>
-        <br><br>
-        <span class="introspan" id="s3">Welcome to my website.</span><span class="cursor"></span>
+        <div class="intro">
+            <span id="s1" class="introspan">H</span>
+            <span id="s2" class="introspan">i</span>
+            <span class="introspan" id="s3">!</span>
+            <span class="introspan" id="s4">&nbsp;</span>
+            <span class="introspan" id="s5">I</span>
+            <span class="introspan" id="s6">&nbsp;</span>
+            <span class="introspan" id="s7">a</span>
+            <span class="introspan" id="s8">m</span>
+            <span class="introspan" id="s9">&nbsp;</span>
+            <span class="introspan" id="s10">S</span>
+            <span class="introspan" id="s11">a</span>
+            <span class="introspan" id="s12">k</span>
+            <span class="introspan" id="s13">i</span>
+            <span class="introspan" id="s14">b</span>
+            <span class="introspan" id="s15">&nbsp;</span>
+            <span class="introspan" id="s16">A</span>
+            <span class="introspan" id="s17">l</span>
+            <span class="introspan" id="s18">a</span>
+            <span class="introspan" id="s19">m</span>
+            <br><br>
+            <span class="introspan" id="s20">W</span>
+            <span class="introspan" id="s21">e</span>
+            <span class="introspan" id="s22">l</span>
+            <span class="introspan" id="s23">c</span>
+            <span class="introspan" id="s24">o</span>
+            <span class="introspan" id="s25">m</span>
+            <span class="introspan" id="s26">e</span>
+            <span class="introspan" id="s27">&nbsp;</span>
+            <span class="introspan" id="s28">t</span>
+            <span class="introspan" id="s29">o</span>
+            <span class="introspan" id="s30">&nbsp;</span>
+            <span class="introspan" id="s31">m</span>
+            <span class="introspan" id="s32">y</span>
+            <span class="introspan" id="s33">&nbsp;</span>
+            <span class="introspan" id="s34">w</span>
+            <span class="introspan" id="s35">e</span>
+            <span class="introspan" id="s36">b</span>
+            <span class="introspan" id="s37">s</span>
+            <span class="introspan" id="s38">i</span>
+            <span class="introspan" id="s39">t</span>
+            <span class="introspan" id="s40">e</span>
+            <!-- <span class="introspan" id="s3">Welcome to my website.</span> -->
+            <span class="cursor"></span>
         </div>
         <br><br>
         <div class="aboutme">
