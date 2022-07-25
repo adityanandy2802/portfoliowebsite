@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500&family=Francois+One&family=Roboto:wght@100&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d8f8d44915.js" crossorigin="anonymous"></script>
     <style>
         *{
             margin: 0;
@@ -148,7 +149,7 @@
         .cursor{
             content: "";
             position: absolute;
-            left: 800px;
+            left: 50%+100px;
             height: 50px;
             width: 5px;
             background-color: white;
@@ -166,6 +167,88 @@
                 opacity: 100%;
             }
         }
+        .education{
+            display: grid;
+            /* flex-direction: row; */
+            justify-items: center;
+            align-items: center;
+            grid-template-columns: 400px 400px 400px;
+        }
+        .license{
+            display: grid;
+            /* flex-direction: row; */
+            justify-items: center;
+            align-items: center;
+            grid-template-columns: 320px 320px 320px 320px;
+        }
+        .schools{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* background-color: black; */
+            color: white;
+            height: 230px;
+            width: 300px;
+            margin-top: 80px;
+            border-radius: 30px;
+            font-family: 'Source Code Pro', 'monospace';
+            opacity: 0%;
+            animation: popup 1s steps(100);
+            animation-iteration-count: 1;
+            /* line-height: 2em; */
+            /* transform: scale(0); */
+            animation-fill-mode: forwards;
+            transition: all 1s ease-in-out;
+            /* perspective: 1000px; */
+            /* transform-style: preserve-3d; */
+            /* transition: transform 0.8s; */
+            cursor: pointer;
+        }
+        @keyframes popup{
+            100%{
+                /* transform: scale(1); */
+                opacity: 100%;
+            }
+        }
+        .schools:hover{
+            transform: scale(1.1);
+            /* transform: rotateY(180); */
+        }
+        .edu{
+            font-size: larger;
+            line-height: 6em;
+        }
+        #edu3{
+            margin-top: 40px;
+            line-height: 1em;
+            text-align: center;
+        }
+        .sectionhead{
+            background-color: white;
+            padding: 10px;
+            border-radius: 20px;
+            /* background-blend-mode:saturation; */
+            color: black;
+            font-family: 'Source Code Pro', 'monospace';
+            font-size: 30px;
+            margin-top: 5px;
+            opacity: 0%;
+            animation: popup 1s steps(100);
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        #sec1{
+            margin-top: 30px;
+        }
+        .projects{
+            display: grid;
+            grid-template-columns: 800px;
+        }
+        .project{
+            font-family: 'Source Code Pro', 'monospace';
+            font-size: 20px;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -173,7 +256,7 @@
         <!-- <h2>MENU</h2> -->
         <li class="item"><a href="index.html" class="nav-item">Home</a></li>
         <li class="item"><a href="aboutme.html" class="nav-item">About Me</a></li>
-        <li class="item"><a href="" class="nav-item">Achievements</a></li>
+        <li class="item"><a href="achievements.html" class="nav-item">Achievements</a></li>
         <li class="item"><a href="contactme.html" class="nav-item">Contact Me</a></li>
     </nav>
     <div class="main">
@@ -188,7 +271,125 @@
             <span class="heading" id="s8">e</span>
             <span class="cursor"></span>
         </div>
-        
-    </div>    
+
+        <div class="intro">
+
+        </div>
+
+        <p class="sectionhead" id="sec1">Education</p>
+        <div class="education">
+            <a href="https://www.southpoint.edu.in/">
+                <div class="schools">
+                    <img src="https://www.southpoint.edu.in/wp-content/themes/southpoint-new/images/logo.png" alt="South Point High School" style="max-height: 95px;">
+                    <p class="edu" id="edu1">South Point High School</p>
+                </div>
+            </a>
+            <a href="https://www.ivws.org/">
+                <div class="schools">
+                    <img src="https://www.ivws.org/wp-content/uploads/2015/08/logo.png" alt="Indus Valley World School" style="max-height: 95px;">
+                    <p class="edu" id="edu2">Indus Valley World School</p>
+                </div>  
+            </a>
+            <a href="https://kiit.ac.in/">
+                <div class="schools">
+                    <img src="https://www.freelogovectors.net/wp-content/uploads/2022/03/kiit_logo_freelogovectors.net_.png" alt="KIIT" style="max-height: 95px;">
+                    <div class="edu" id="edu3">Kalinga Institute of Industrial Technology</div>
+                </div>
+            </a>
+        </div>
+
+        <p class="sectionhead">Skills</p>
+        <div class="education">
+            <div class="schools">
+                <i class="fa-brands fa-python fa-7x"></i>
+                <p class="edu" id="edu1">Python</p>
+            </div>
+            <div class="schools">
+                <i class="fa-solid fa-robot fa-7x"></i>
+                <p class="edu" id="edu2">Machine Learning</p>
+            </div>
+            <div class="schools">
+                <i class="fa-regular fa-chart-bar fa-7x"></i>
+                <div class="edu" id="edu3">Data Analytics</div>
+            </div>
+            <div class="schools">
+                <img src="https://www.seekpng.com/png/detail/269-2693110_mysql-logo-png-image-with-transparent-background-mysql.png" alt="mysql" style="max-height: 95px;">
+                <div class="edu" id="edu3">MySQL</div>
+            </div>
+            <div class="schools">
+                <i class="fa-solid fa-a fa-7x"></i>
+                <div class="edu" id="edu3">English</div>
+            </div>
+            <div class="schools">
+                <i class="fa-solid fa-people-group fa-7x"></i>
+                <div class="edu" id="edu3">Teamwork</div>
+            </div>
+            <div class="schools">
+                <i class="fa-solid fa-list-check fa-7x"></i>
+                <div class="edu" id="edu3">Project Management</div>
+            </div>
+            <div class="schools">
+                <i class="fa-regular fa-comments fa-7x"></i>
+                <div class="edu" id="edu3">Communication</div>
+            </div>
+            <div class="schools">
+                <i class="fa-solid fa-person-chalkboard fa-7x"></i>
+                <div class="edu" id="edu3">Strategy</div>
+            </div>
+            <div class="schools">
+                <i class="fa-solid fa-chalkboard-user fa-7x"></i>
+                <div class="edu" id="edu3">Presentations</div>
+            </div>
+            <div class="schools">
+                <i class="fa-solid fa-chart-pie fa-7x"></i>
+                <div class="edu" id="edu3">Analytical Skills</div>
+            </div>
+            <div class="schools">
+                <i class="fa-solid fa-file-powerpoint fa-7x"></i>
+                <div class="edu" id="edu3">Microsoft Powerpoint</div>
+            </div>
+            <div class="schools">
+                <i class="fa-solid fa-file-excel fa-7x"></i>
+                <div class="edu" id="edu3">Microsoft Excel</div>
+            </div>
+        </div>
+
+        <p class="sectionhead">License and Certificates</p>
+        <div class="license">
+            <a href="https://www.theforage.com/achievements?ref=5jhhPRp3eovpTK7YW">
+                <div class="schools">
+                    <img width="100" src="https://media-exp1.licdn.com/dms/image/C560BAQHEQadDieF8mg/company-logo_100_100/0/1652888549818?e=1666828800&amp;v=beta&amp;t=Rhx1FDmUpCOaPa4cdifKgXs-kLJSW4ggW26GCY9S7vY" loading="lazy" height="100" alt="Accenture logo" id="ember308" class="ivm-view-attr__img--centered EntityPhoto-square-3  lazy-image ember-view">
+                    <p class="edu" id="edu3">Accenture Data Analytics <br>Virtual Experience</p>
+                </div>
+            </a>
+            <a href="https://www.theforage.com/badges/XNpkHhYduo9fz264b/Jssmc3fxq4guouxE9/Strategy%20Consulting%20Virtual%20Experience%20Program%20/Sakib?ref=5jhhPRp3eovpTK7YW">
+                <div class="schools">
+                    <img width="100" src="https://media-exp1.licdn.com/dms/image/C4E0BAQGjFlguKUvwYw/company-logo_100_100/0/1651581481102?e=1666828800&amp;v=beta&amp;t=NeHzk7E6a4MzqJ0YfZj2oP_uVK13NCTWBTTOKWR7SZs" loading="lazy" height="100" alt="Boston Consulting Group (BCG) logo" id="ember309" class="ivm-view-attr__img--centered EntityPhoto-square-3  lazy-image ember-view">
+                    <p class="edu" id="edu3">Open-Access Strategy Consulting Virtual Experience Program</p>
+                </div>  
+            </a>
+            <a href="http://www.globalcert.cloud/">
+                <div class="schools">
+                    <img width="100" src="https://media-exp1.licdn.com/dms/image/C560BAQE9xi0thHfozw/company-logo_100_100/0/1631621318062?e=1666828800&amp;v=beta&amp;t=FZ8fN1z0DKfLuXtwz9BuS--nftLMEfkjAW-Y3XxEj3g" loading="lazy" height="100" alt="GlobalCert logo" id="ember310" class="ivm-view-attr__img--centered EntityPhoto-square-3  lazy-image ember-view">
+                    <div class="edu" id="edu1">Data Science Intern</div>
+                </div>
+            </a>
+            <a href="https://www.guvi.in/verify-certificate?id=418D3UR7509I31p361">
+                <div class="schools">
+                    <img width="100" src="https://media-exp1.licdn.com/dms/image/C4D0BAQE11S3JxIasLg/company-logo_100_100/0/1635344022384?e=1666828800&amp;v=beta&amp;t=6oHIw2JMwkg5Zq9w6QgkSXOfrwkfJSjmvTY9H36Awak" loading="lazy" height="100" alt="GUVI Geek Networks, IITM Research Park logo" id="ember291" class="ivm-view-attr__img--centered EntityPhoto-square-3  lazy-image ember-view">
+                    <div class="edu" id="edu3">Face Recognition App Using Python</div>
+                </div>
+            </a>
+        </div>
+
+        <!-- <p class="sectionhead">Projects</p> -->
+        <!-- <div class="projects"> -->
+            <!-- <div class="project"> -->
+                <!-- I built a Hospital Management System with the help of Python and MySQL. It can take input of all data about a patient and store it, retrieve the patient data on demand and remove patient details upon release. It also records the medicines prescribed for the patient, dose and duration of medicine intake. This project is built with the help of Python's Tkinter library so it is GUI based and easy to interact with. This project was also approved by the Central Board of Secondary Education (C.B.S.E). -->
+            <!-- </div> -->
+        <!-- </div> -->
+
+
+    </div>   
 </body>
 </html>
