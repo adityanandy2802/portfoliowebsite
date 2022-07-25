@@ -195,7 +195,7 @@ body{
     margin-top: 80px;
     border-radius: 30px;
     font-family: 'Source Code Pro', 'monospace';
-    /* opacity: 0%; */
+    opacity: 0%;
     animation: popup 1s steps(100);
     animation-iteration-count: 1;
     /* line-height: 2em; */
@@ -206,6 +206,14 @@ body{
     /* transform-style: preserve-3d; */
     /* transition: transform 0.8s; */
     cursor: pointer;
+}
+@keyframes popup{
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 .schools:hover{
     transform: scale(1.1);
