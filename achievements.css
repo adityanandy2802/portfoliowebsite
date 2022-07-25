@@ -208,10 +208,10 @@ body{
     cursor: pointer;
 }
 @keyframes popup{
-    0%{
+    50%{
         opacity: 0%;
     }
-    100%{
+    50%{
         opacity: 100%;
     }
 }
