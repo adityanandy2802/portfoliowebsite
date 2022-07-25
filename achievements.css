@@ -195,7 +195,7 @@ body{
     margin-top: 80px;
     border-radius: 30px;
     font-family: 'Source Code Pro', 'monospace';
-    /* opacity: 0%; */
+    opacity: 0%;
     animation: popup 1s steps(100);
     animation-iteration-count: 1;
     /* line-height: 2em; */
